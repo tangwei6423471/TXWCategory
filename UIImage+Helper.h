@@ -83,7 +83,17 @@
 - (void)drawInRect:(CGRect)rect radius:(CGFloat)radius;
 - (void)drawInRect:(CGRect)rect radius:(CGFloat)radius contentMode:(UIViewContentMode)contentMode;
 
+// 根据url获取uiimage
+- (UIImage *)getImageFromURL:(NSString *)fileURL;
 
+// 判断图片格式是否jpg
+- (BOOL)imageIsJPGFromData:(NSData *)imageData;
+// 判断图片格式是否png
+- (BOOL)imageIsPNGFromData:(NSData *)imageData;
+
+
+// 拍照完 照片方向不对
+- (UIImage *)fixOrientation;
 //=============================
 
 + (UIImage *)updateImageOrientation:(UIImage *)chosenImage;

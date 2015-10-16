@@ -23,4 +23,7 @@
 - (void)buttonWithNormalTitleColor:(UIColor *)normalColor highlightedTitleColor:(UIColor *)highlightedColor;
 
 + (UIButton *)buttonWithTitle:(NSString *)title titleColor:(UIColor *)titleColor backgroundColor:(UIColor *)backgroundColor target:(id)target action:(SEL)action;
+
+// 20150921 alvin
+- (void)setImageWithAnimation:(UIImage *)image forState:(UIControlState)state;
 @end

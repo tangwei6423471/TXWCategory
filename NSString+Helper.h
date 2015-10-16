@@ -53,4 +53,9 @@
 
 + (NSString *)removeSpaceAndNewline:(NSString *)str;// 去掉所有空格和换行线
 
+// nsstring+json
++ (NSString *)jsonStringWithDictionary:(NSDictionary *)dictionary;
++ (NSString *)jsonStringWithArray:(NSArray *)array;
++ (NSString *)jsonStringWithString:(NSString *)string;
++ (NSString *)jsonStringWithObject:(id)object;
 @end
